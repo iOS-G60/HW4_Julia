@@ -62,7 +62,7 @@ class ViewController: UIViewController {
                 print ("the text entered is not a number")
             }
         }
-    }
+    }//Polina:  парочка лишних строк пустых, не забывай удалять)
 
 }
 
