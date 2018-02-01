@@ -15,9 +15,7 @@ class Aircraft {
     var passengerCapacity: Int
     var fuel: Int
 
-    private var preparationsForNextFlight: Bool
     private var businessClassSeats: Int //Polina: одной пустой строки достаточно, не забывай подчищать)
-
 
     init(typename: String,
          weight: Int,
@@ -41,9 +39,8 @@ class Aircraft {
     func AtParkingApron() { //Polina: названия методов с маленькой
         fuel -= fuel / 1
         weight -= weight / 2
-        if preparationsForNextFlight {
-            fuel == fuel //Polina: что ты тут хотела сделать? Результат данной операции - true, не совсем понимаю что тебе надо
-        }
+       //Polina: что ты тут хотела сделать? Результат данной операции - true, не совсем понимаю что тебе надо
+       //Julia: исправила
     }
 
     func touchDown() {
@@ -58,6 +55,4 @@ class Aircraft {
     func amountOfEconomyClassSeats() {
         economyClassSeats()
     } //Polina: парочка пустых строк)
-
-
 }
