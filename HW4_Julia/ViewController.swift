@@ -20,11 +20,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         print(airbus)
         addPassengersTextField.keyboardType = .decimalPad
         setupData()
-        
     }
 
     func setupData() {
@@ -62,7 +60,6 @@ class ViewController: UIViewController {
                 print ("the text entered is not a number")
             }
         }
-    }//Polina:  парочка лишних строк пустых, не забывай удалять)
-
+    }//Polina:  парочка лишних строк пустых, не забывай удалять) //Julia: исправила
 }
 
