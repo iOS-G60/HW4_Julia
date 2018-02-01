@@ -21,14 +21,12 @@ class Aircraft {
          weight: Int,
          passengerCapacity: Int,
          fuel: Int,
-         preparationsForNextFlight: Bool = false,
          businessClassSeats: Int = 30){
 
         self.typename = typename
         self.weight = weight
         self.passengerCapacity = passengerCapacity
         self.fuel = fuel
-        self.preparationsForNextFlight = preparationsForNextFlight
         self.businessClassSeats = businessClassSeats
     }
 
@@ -45,7 +43,7 @@ class Aircraft {
 
     func touchDown() {
         fuel -= fuel / 1
-        weight -= weight / 2
+        weight -= weight / 3
     }
 
     private func economyClassSeats() {
